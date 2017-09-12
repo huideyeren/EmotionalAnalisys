@@ -239,10 +239,10 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     # キーワードで取得
-    #getter = TweetsGetter.bySearch(u'hoge')
+    getter = TweetsGetter.bySearch(args.uname)
 
     # ユーザーを指定して取得 （screen_name）
-    getter = TweetsGetter.byUser(args.uname)
+    # getter = TweetsGetter.byUser(args.uname)
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
     res = pd.DataFrame()

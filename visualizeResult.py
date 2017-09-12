@@ -60,7 +60,7 @@ def drawPredictResult(df,title):
   plt.ylabel("-1 : negative <------> positive : +1", fontsize=fsize)
   #plt.ylabel(label[1], fontsize=fsize)
   #
-  plt.xlim([datetime.date( 2017, 4, 1 ), datetime.date( 2017, 7, 24 )])
+  plt.xlim([datetime.date( 2017, 4, 1 ), datetime.date( 2017, 9, 30 )])
   plt.ylim([-1, 1])
   plt.savefig('{}.png'.format(title), bbox_inches='tight')
 

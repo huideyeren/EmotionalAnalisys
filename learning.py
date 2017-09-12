@@ -14,7 +14,7 @@ parser.add_argument('output',type=str, help="出力ファイルへのPath(必須
 args = parser.parse_args()
 
 # 学習
-classifier = ft.supervised(args.input, args.output, dim=400, lr=0.05, epoch=200, thread=6)
+classifier = ft.supervised(args.input, args.output, dim=200, lr=0.05, epoch=100, thread=12)
 
 # Properties
 result = classifier.test(args.input, 2)
